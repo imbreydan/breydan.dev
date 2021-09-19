@@ -1,42 +1,98 @@
 <!DOCTYPE HTML>
-
-<!-- Background imagery taken by me -->
 <html lang="en">
-<head>
-    <meta charset="utf-8"/>
 
-    <title>breydan</title>
-    
-    <meta property="og:title" content="breydan">
-    <meta property="og:url" content="https://breydan.dev">
-    <meta property="og:description" content="sometimes i write code..">
-    <meta property="theme-color" content="#238B83" data-react-helmet="true">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+<head>
+    <meta charset="utf-8" />
+
+    <title>Breydan</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="breydan r" />
+    <meta property="og:description" content="hi, im breydan👋" />
+    <meta property="og:url" content="https://breydan.dev" />
+    <meta property="og:image" content="https://breydan.dev/assets/pfp.gif" />
+    <meta name="theme-color" content="#292946" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles/cv.css">
+    <link rel="stylesheet" href="styles/rain.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
+
 <body>
-<div class="loading"></div>
-<div class="socials">
-    <p><a href="javascript:void(0);" onclick="copyDiscord();" class="hvr-float discord" draggable="false">breydan#0001</a></p>
-    <p><a href="javascript:void(0);" class="hvr-float sub" draggable="false">sometimes i write code..</a></p>
-    <a href="https://github.com/imbreydan" target="_blank" draggable="false">
-        <img alt="github" class="hvr-float" src="assets/icons/github.webp" width="100" height="100">
-    </a>
-    <a href="https://blockchair.com/bitcoin/address/bc1q3lj0v2d56j24lupvwvx8tw8nlnut2u3xkm7ac6" target="_blank" draggable="false">
-    	<img alt="bitcoin" class="hvr-float" onclick="copyBtc();" src="assets/icons/bitcoin.webp" width="100" height="100">
-    </a>
-    <a href="https://steamcommunity.com/id/yuhbreydan" target="_blank" draggable="false">
-        <img alt="steam" class="hvr-float" src="assets/icons/steam.webp" width="100" height="100">
-    </a>
-</div>
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6f4459ee978f449184bf433a3667deaf"}'></script>
-<script src="js/script.js"></script>
-<script>
-    $(window).on("load", function (e) {
-        $(".loading").fadeOut(1000);
-    });
-</script>
+    <div class="rain front-row"></div>
+    <div class="rain back-row"></div>
+
+    <div class="page-wrapper">
+        <div class="page-content">
+            <header id="site-header" class="header">
+                <div class="header-content">
+                    <div class="header-photo">
+                        <a>
+                            <img src="assets/pfp.gif" alt="profile picture">
+                        </a>
+                    </div>
+                    <div class="header-titles">
+                        <a>
+                            <h2>Breydan R</h2>
+                        </a>
+                        <h4>Java Developer</h4>
+                    </div>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li>
+                            <a id="github" href="https://github.com/imbreydan" data-tooltip="/imbreydan" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="discord" href="#" data-tooltip="breydan#0001" onclick="copyDiscord()">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="twitter" href="https://twitter.com/yuhbreydan" data-tooltip="/yuhbreydan" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="spotify" href="https://sptfy.com/breydan" data-tooltip="/breydan" target="_blank">
+                                <i class="fab fa-spotify"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                <div id="playing" class="playing"></div>
+                <div class="copyright">© 2020 Breydan R. All rights reserved.</div>
+            </header>
+            <div class="content-area">
+                <div class="section-content">
+                    <div class="page-title">
+                        <h1>A bit about me</h1>
+                    </div>
+                    <div class="page-about">
+                        <p>
+                            Hey, I'm Breydan👋. Can someone tell me what to put here?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/rain.js"></script>
+    <script src="js/clipboard.js"></script>
+    <script src="js/spotify.js"></script>
+    <script>
+        $(window).on("load", function(e) {
+            $(".loading").fadeOut(1000);
+        });
+    </script>
 </body>
+
 </html>
