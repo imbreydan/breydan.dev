@@ -6,7 +6,7 @@ async function getPlaying() {
     if (Date.now() - lastFetch <= 2000) {
         await sleep(2000);
     }
-    await fetch('http://159.65.235.235:4000/', {
+    await fetch('https://api.breydan.dev/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
