@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="utf-8" />
-
     <title>Breydan</title>
 
     <meta property="og:type" content="website">
@@ -24,9 +23,8 @@
 <body>
     <div class="rain front-row"></div>
     <div class="rain back-row"></div>
-
     <div class="page-wrapper">
-        <div class="page-content">
+        <div class="page-info">
             <header id="site-header" class="header">
                 <div class="header-content">
                     <div class="header-photo">
@@ -44,21 +42,21 @@
                 <div class="links">
                     <ul>
                         <li>
-                            <a id="github" href="https://github.com/imbreydan" data-tooltip="/imbreydan" target="_blank">
+                            <a class="hvr-float" id="github" href="https://github.com/imbreydan" data-tooltip="/imbreydan" target="_blank">
                                 <i class="fab fa-github"></i>
                             </a>
                         </li>
                         <li>
-                            <a id="discord" href="#" data-tooltip="breydan#0001" onclick="copyDiscord()">
+                            <a class="hvr-float" id="discord" href="#" data-tooltip="breydan#0001" onclick="copyDiscord()">
                                 <i class="fab fa-discord"></i>
                             </a>
                         </li>
                         <li>
-                            <a id="telegram" href="https://t.me/imbreydan" data-tooltip="/imbreydan" target="_blank">
+                            <a class="hvr-float" id="telegram" href="https://t.me/imbreydan" data-tooltip="/imbreydan" target="_blank">
                                 <i class="fab fa-telegram-plane"></i> </a>
                         </li>
                         <li>
-                            <a id="spotify" href="https://sptfy.com/breydan" data-tooltip="/breydan" target="_blank">
+                            <a class="hvr-float" id="spotify" href="https://sptfy.com/breydan" data-tooltip="/breydan" target="_blank">
                                 <i class="fab fa-spotify"></i>
                             </a>
                         </li>
@@ -67,7 +65,7 @@
                 <br>
                 <br>
                 <div id="playing" class="playing"></div>
-                <div class="copyright">© 2020 Breydan R. All rights reserved.</div>
+                <div class="copyright"><code>© 2020 Breydan R. All rights reserved.</code></div>
             </header>
             <div class="content-area">
                 <div class="section-content">
@@ -76,7 +74,13 @@
                     </div>
                     <div class="page-about">
                         <p>
-                            Hey, I'm Breydan👋. Can someone tell me what to put here?
+                            Hi! I'm Breydan 👋<br><br> I program 0s and 1s into my computers transistors through the clumps of atoms that construct my fingers, ultimately triggered by a myriad of synapses firing in my brain due to a spontaneous combustion
+                            of subatomic particles stored in the abyss of my body's chemistry, originated by the colossal explosion of stars shortly after the big bang that provided my celestial being with the necessary elements needed to produce complex
+                            chemicals required to fabricate abstract thought processes. In other words, I am a software engineer.
+                            <br>
+                            <br>
+                            <br>
+                            <br>👀 Check out <a href="https://auraside.com" class="company auraside" target="_blank">AuraSide</a> & <a href="https://sapphire.ac" class="company sapphire" target="_blank">Sapphire</a>.
                         </p>
                     </div>
                 </div>
@@ -87,11 +91,6 @@
     <script src="js/rain.js"></script>
     <script src="js/clipboard.js"></script>
     <script src="js/spotify.js"></script>
-    <script>
-        $(window).on("load", function(e) {
-            $(".loading").fadeOut(1000);
-        });
-    </script>
 </body>
 
 </html>

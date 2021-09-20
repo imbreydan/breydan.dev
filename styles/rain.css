@@ -31,16 +31,16 @@
         transform: translateY(0vh);
     }
     75% {
-        transform: translateY(90vh);
+        transform: translateY(100vh);
     }
     100% {
-        transform: translateY(90vh);
+        transform: translateY(100vh);
     }
 }
 
 .stem {
     width: 1px;
-    height: 60%;
+    height: 80%;
     margin-left: 7px;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.25));
     animation: stem 0.5s linear infinite;
