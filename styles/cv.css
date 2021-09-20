@@ -306,3 +306,20 @@ ul {
 .company.sapphire:hover {
     color: var(--light-blue);
 }
+
+#commit {
+    color: #fff;
+    width: 380px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px 10px 35px;
+    line-height: 14px;
+    font-size: 12px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    opacity: 0.4;
+    cursor: pointer;
+    text-decoration: none;
+}
