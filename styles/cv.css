@@ -120,7 +120,8 @@ body {
 .section-content {
     padding: 60px;
     background-color: var(--content-bg);
-    border-radius: 32px;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
     position: relative;
     height: auto;
     width: 100%;
