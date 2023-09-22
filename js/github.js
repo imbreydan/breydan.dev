@@ -1,4 +1,5 @@
 let commitElement = document.getElementById("commit");
+let dateElement = document.getElementById("date")
 
 async function getLatestCommit() {
     await fetch('https://api.github.com/repos/imbreydan/breydan.dev/git/refs/heads/master', {
@@ -18,4 +19,9 @@ async function getLatestCommit() {
         });
 }
 
+function setCopyrightYear() {
+    dateElement.innerText = new Date().getFullYear()
+}
+
+setCopyrightYear()
 getLatestCommit();
