@@ -20,7 +20,7 @@ async function getLatestCommit() {
 }
 
 function setCopyrightYear() {
-    dateElement.innerText = new Date().getFullYear()
+    dateElement.innerHTML = new Date().getFullYear()
 }
 
 setCopyrightYear()
